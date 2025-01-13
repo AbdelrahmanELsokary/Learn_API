@@ -8,6 +8,7 @@ fetch("https://fakestoreapi.com/products")
       <div>
       <h2>${products[i].category}</h2>
       <img src="${products[i].image}" class="image" >
+      <p>${products[i].description}
       </div>
       `;
     }
