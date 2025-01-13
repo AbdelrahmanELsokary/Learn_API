@@ -5,8 +5,9 @@ fetch("https://fakestoreapi.com/products")
     let product = "";
     for (let i = 0; i < products.length; i++) {
       product += `
-      <img src="${products[i].image}" >
+      <img class = "image" src="${products[i].image}" >
       `;
     }
+    console.log(products);
     container.innerHTML = product;
   });
