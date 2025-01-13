@@ -5,10 +5,12 @@ fetch("https://fakestoreapi.com/products")
     let product = "";
     for (let i = 0; i < products.length; i++) {
       product += `
-      <div>
+      <div class="product">
       <h2>${products[i].category}</h2>
       <img src="${products[i].image}" class="image" >
       <p>${products[i].description}
+      <br>
+      <span>${products[i].price}
       </div>
       `;
     }
